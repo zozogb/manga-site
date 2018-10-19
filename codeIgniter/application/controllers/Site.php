@@ -28,6 +28,7 @@ class Site extends CI_Controller {
 	
 	public function ajout() {
 		$this->output->enable_profiler(true);
+		$this->load->library('upload');
 		$this->load->helper("form");
 		$data["title"] = "Voca-site";
 		$this->load->view('common/header', $data);
@@ -39,7 +40,7 @@ class Site extends CI_Controller {
 		$this->output->enable_profiler(true);
 		$this->load->library('form_validation');
 		
-		$this->form_validation->set_rules('type', '"Type du contenu"', 'trim|required|min_length[5]|max_length[52]|alpha_dash|encode_php_tags');
+		$this->form_validation->set_rules('type', '"Type du contenu"', 'trim|required|min_length[4]|max_length[52]|alpha_dash|encode_php_tags');
 		$this->form_validation->set_rules('name', '"Nom de la page"', 'trim|required|min_length[5]|max_length[52]|alpha_dash|encode_php_tags');
 		$data["title"] = "Voca-site";
 		$this->load->view('common/header', $data);
@@ -53,7 +54,7 @@ class Site extends CI_Controller {
 		}
 		else
 		{
-			//	Le formulaire est invalide ou vide
+			//	Le formulaire est invalide ou vide é
 			$data["verif"] = "echec";
 			$data["type"] = $this->input->post('type');
 			$data["name"] = $this->input->post('name');

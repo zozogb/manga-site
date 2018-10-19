@@ -1,6 +1,6 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-
+// é
 class UTAU extends CI_Controller {
 	public function kasane() {
 		$this->output->enable_profiler(true);

@@ -16,7 +16,7 @@
 				<li><a href="#">Navigation</a>
 					<ul>
 						<li><a href="<?= site_url(); ?>">Accueil</a></li>
-						<li><a href="<?= site_url(); ?>">A propos</a></li>
+						<li><a href="<?= site_url(); ?>">À propos</a></li>
 						<li><a href="<?= site_url('ajout'); ?>">DEV-ajoute</a></li>
 						<li><a href="<?= site_url('galerie'); ?>">galerie<br> <span class="important">(Vesion Beta)</span></a></li>
 					</ul>
