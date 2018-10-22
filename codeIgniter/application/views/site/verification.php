@@ -2,12 +2,12 @@
 				<article class="centre">
 					<?php
 						$verif=0;
-						if($type=="Vocaloid"){
-							$fichier = fopen("application/controllers/Vocaloid.php", "r+") or die("<p>Impossible d'éditer le fichier de contréle!</p>");
+						if($type=="anime"){
+							$fichier = fopen("application/controllers/anime.php", "r+") or die("<p>Impossible d'éditer le fichier de contréle!</p>");
 							$verif=1;
 						}
-						else if($type=="UTAU"){
-							$fichier = fopen("application/controllers/UTAU.php", "r+") or die("<p>Impossible d'éditer le fichier de contréle!</p>");
+						else if($type=="manga"){
+							$fichier = fopen("application/controllers/manga.php", "r+") or die("<p>Impossible d'éditer le fichier de contréle!</p>");
 							$verif=1;
 						}
 						else{

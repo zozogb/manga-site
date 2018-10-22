@@ -4,7 +4,7 @@
 					<?= form_open_multipart('verification'); ?>
 					<div>
 						<?= form_label("Type du contenu:", "type"); ?>
-						<?= form_dropdown('type', array('Vocaloid'=>'Vocaloid','UTAU'=>'UTAU')); ?>
+						<?= form_dropdown('type', array('anime'=>'anime','manga'=>'manga')); ?>
 						<?= form_error('type'); ?>
 					</div>
 					<div>

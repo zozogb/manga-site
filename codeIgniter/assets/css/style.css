@@ -1,10 +1,11 @@
 html { 
-  margin:0;
-  padding:0;
-  background: url(../images/utile/wallpapers.jpg) no-repeat center fixed;
-  z-index: 1;
-  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
-  background-size: cover; /* version standardisée */
+	margin:0;
+	padding:0;
+	background: url(../images/utile/wallpapers3.jpg) no-repeat center fixed;
+	z-index: 1;
+	-webkit-background-size: cover; /* pour anciens Chrome et Safari */
+	background-size: cover; /* version standardisÃ©e */
+	font-family:arial;
 }
 
 body {
@@ -31,6 +32,10 @@ footer {
 	filter:alpha(opacity=80);
 }
 
+td{
+	border-bottom: 1px solid;
+}
+
 header {
 	position: absolute;
 	top: 0;
@@ -39,10 +44,30 @@ header {
 	width:100%;
 	height:120px;
 	min-height:120px;
-	min-width:800px;
 	background-color: rgba(255, 255, 255, 0.9);
 	filter:alpha(opacity=90);
 }
+
+section {
+	margin-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+	width:60%;
+	min-height:400px;
+	min-width:480px;
+	padding:15px;
+	padding-top:25px;
+	background-color: rgba(255, 255, 255, 0.8);
+	filter:alpha(opacity=80);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* ------------------------------------------------------------------------------- */
 
 #pub-1 {
 	float:left;
@@ -63,22 +88,8 @@ header {
 #conteneur {
 	display: flex;
 	width:100%;
-	min-width:500px;
+	min-width:360px;
 	margin-top: 125px;
-}
-
-section {
-	margin-top:20px;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:20px;
-	width:60%;
-	min-height:400px;
-	min-width:480px;
-	padding:15px;
-	padding-top:25px;
-	background-color: rgba(255, 255, 255, 0.8);
-	filter:alpha(opacity=80);
 }
 
 #logo {
@@ -96,8 +107,6 @@ section {
 	font-family: "Comic Sans MS", sans-serif;
 	align-self: flex-start;
 }
-
-
 
 #menu-2
 {
@@ -132,6 +141,8 @@ section {
 	display: flex;
 }
 
+/* ------------------------------------------------------------------------------- */
+
 .musique {
 	margin-left:auto;
 	margin-right:auto;
@@ -161,7 +172,6 @@ section {
 }
 
 .news {
-	
 	border:1px solid;
 	margin-top:40px;
 	margin-left:auto;
@@ -173,7 +183,7 @@ section {
 .image-perso {
 	background-color:white;
 	margin-left:20px;
-	width:270px;
+	max-width:270px;
 	text-align:center;
 }
 
@@ -215,7 +225,201 @@ section {
 	margin:10px;
 }
 
-/* CSS DU MENU  récupérer sur internet mais ça sa se voix a 5 années lumières */
+.anime-info{
+	display: flex;
+	flex-direction: row;
+}
+
+.info-container{
+	flex: 1;
+	flex-direction: column;
+}
+
+.info-label{
+	width: 150px;
+	min-width: 150px;
+	font-weight: bold;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+video, .video-wrapper {
+	margin: 0 auto;
+	width: 470px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* CSS des caracteristiques des fiche d'anime */
+
+
+.anime-genres{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+.anime-genre{
+	margin:6px 5px;
+	padding:5px;
+	border-radius: 6px;
+	color: white;
+}
+
+.genre-action{
+	background-color: rgb(234, 60, 23);;
+}
+
+.genre-martial-arts{
+	background-color: rgb(246, 187, 66);
+}
+
+.genre-adventure{
+	background-color: rgb(140, 193, 82);;
+}
+
+.genre-comedie{
+	background-color: rgb(232, 206, 77);
+}
+
+.genre-drama{
+	background-color: rgb(60, 59, 61);
+}
+
+.genre-ecchi{
+	background-color: rgb(236, 135, 192);
+}
+
+.genre-ecole{
+	background-color: rgb(72, 207, 173);
+}
+
+.genre-enfant{
+	background-color: rgb(55, 188, 155);
+}
+
+.genre-fantastique{
+	background-color: rgb(42, 186, 102);
+}
+
+.genre-harem{
+	background-color: rgb(215, 112, 173);
+}
+
+.genre-historique{
+	background-color: rgb(170, 142, 105);
+}
+
+.genre-horreur{
+	background-color: rgb(67, 74, 84);
+}
+
+.genre-josei{
+	background-color: rgb(72, 207, 173);
+}
+
+.genre-magique{
+	background-color: rgb(233, 87, 63);
+}
+
+.genre-mecha{
+	background-color: rgb(170, 178, 189);
+}
+
+.genre-militaire{
+	background-color: rgb(186, 162, 134);
+}
+
+.genre-musique{
+	background-color: rgb(160, 206, 203);
+}
+
+.genre-mystere{
+	background-color: rgb(128, 103, 183);
+}
+
+.genre-policier{
+	background-color: rgb(74, 137, 220);
+}
+
+.genre-psychologique{
+	background-color: rgb(106, 80, 167);
+}
+
+.genre-romance{
+	background-color: rgb(191, 38, 60);
+}
+
+.genre-sci-fi{
+	background-color: rgb(59, 175, 218);
+}
+
+.genre-seinen{
+	background-color: rgb(142, 130, 113);
+}
+
+.genre-shojo{
+	background-color: rgb(236, 135, 192);
+}
+
+.genre-shojo-ai{
+	background-color: rgb(215, 112, 173);
+}
+
+.genre-shonen{
+	background-color: rgb(74, 137, 220);
+}
+
+.genre-shonen-ai{
+	background-color: rgb(93, 156, 236);
+}
+
+.genre-sport{
+	background-color: rgb(125, 177, 177);
+}
+
+
+.genre-super-pouvoir{
+	background-color: rgb(237, 85, 101);
+}
+
+.genre-thriller{
+	background-color: rgb(93, 156, 236);
+}
+
+
+.genre-tranche-de-vie{
+	background-color: rgb(46, 204, 113);
+}
+
+.genre-yaoi{
+	background-color: rgb(224, 195, 65);
+}
+
+.genre-yuri{
+	background-color: rgb(252, 110, 81);
+}
+
+
+/* ------------------------------------------------------------------------------- */
+
+/* CSS DU MENU  recuperer sur internet mais ca se vois a 5 annees lumieres */
 
 .menu, .menu ul{
 opacity:1.0;
@@ -265,56 +469,56 @@ max-height:15em;
 .menu li:first-child{
 opacity:1.0;
 filter:alpha(opacity=100);
-background-color: #65537A;
-background-image:-webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
-background-image:linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+background-color: black;
+background-image:-webkit-linear-gradient(top, black 0%, black 100%);
+background-image:linear-gradient(to bottom, black 0%, black 100%);
 }
 .menu li:nth-child(2){
 opacity:1.0;
 filter:alpha(opacity=100);
-background-color: #729EBF;
-background-image: -webkit-linear-gradient(top, #729EBF 0%, #333A40 100%);
-background-image:linear-gradient(to bottom, #729EBF 0%, #333A40 100%);
+background-color: black;
+background-image: -webkit-linear-gradient(top, black 0%, black 100%);
+background-image:linear-gradient(to bottom, black 0%, black 100%);
 }
 .menu li:nth-child(3){
 opacity:1.0;
 filter:alpha(opacity=100);
-background-color: #F6AD1A;
-background-image:-webkit-linear-gradient(top, #F6AD1A 0%, #9F391A 100%);
-background-image:linear-gradient(to bottom, #F6AD1A 0%, #9F391A 100%);
+background-color: black;
+background-image:-webkit-linear-gradient(top, black 0%, black 100%);
+background-image:linear-gradient(to bottom, black 0%, black 100%);
 }
 .menu li:last-child{
 opacity:1.0;
 filter:alpha(opacity=100);
-background-color: #CFFF6A;
-background-image:-webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
-background-image:linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+background-color: black;
+background-image:-webkit-linear-gradient(top, black 0%, black 100%);
+background-image:linear-gradient(to bottom, black 0%, black 100%);
 }
 /* background des liens sous menus */
 .menu li:first-child li{
-background:#2A2333;
+background:black;
 }
 .menu li:nth-child(2) li{
-background:#333A40;
+background:black;
 }
 .menu li:nth-child(3) li{
-background:#9F391A;
+background:black;
 }
 .menu li:last-child li{
-background:#677F35;
+background:black;
 }
 /* background des liens menus et sous menus au survol */
 .menu li:first-child:hover, .menu li:first-child li:hover{
-background:#65537A;
+background:grey;
 }
 .menu li:nth-child(2):hover, .menu li:nth-child(2) li:hover{
-background:#729EBF;
+background:grey;
 }
 .menu li:nth-child(3):hover, .menu li:nth-child(3) li:hover{
-background:#F6AD1A;
+background:grey;
 }
 .menu li:last-child:hover, .menu li:last-child li:hover{
-background:#CFFF6A;
+background:grey;
 }
 /* les a href */
 .menu a{
@@ -328,16 +532,16 @@ font-family:arial;
 padding:8px 0;
 }
 .menu li:hover li a{
-color:#fff;
+color:white;
 text-transform:inherit;
 }
 .menu li:hover a, .menu li li:hover a{
-color:#000;
+color:black;
 }
 
-/* ----------- */
+/* ------------------------------------------------------------------------------- */
 
-/* Partie pour modifier le css en fonction de la taille de l'écran */
+/* Partie pour modifier le css en fonction de la taille de l'ecran */
 
 @media screen and (max-width: 1075px) /* sinon le site risque de casser ... */
 {
@@ -345,7 +549,7 @@ color:#000;
 		display: block;
 	}
 	
-	video {
+	video, iframe, .video-wrapper{
 		width: 470px;
 	}
 	
@@ -389,4 +593,51 @@ color:#000;
 	#pub-3 {
         display:block;
     }
+	
+	.pub{
+		margin: 0px;
+	}
+	
+	.image-perso{
+		float: none;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	section{
+		min-width: 360px;
+	}
+	
+	video, iframe, .video-wrapper{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 400px) /* sinon le site risque de casser ... */
+{
+	section{
+		padding: 0px;
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 360px) /* version petit telephone lever */
+{
+	.pub{
+		margin: 0px;
+	}
+	
+	.image-perso{
+		float: none;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	
+	section{
+		margin: 0px;
+	}
+	
+	video, iframe, .video-wrapper{
+		width: 330px;
+	}
 }

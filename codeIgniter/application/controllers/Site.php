@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Site extends CI_Controller {
+class site extends CI_Controller {
 	public function index() {
 		$this->output->enable_profiler(true);
 		$data["title"] = "Voca-site";

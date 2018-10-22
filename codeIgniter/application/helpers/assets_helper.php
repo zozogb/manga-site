@@ -42,9 +42,9 @@ if ( ! function_exists('video_url')) //condition pour éviter de redéfinir des 
 
 if ( ! function_exists('video')) //condition pour éviter de redéfinir des fonctions
 {
-	function video($nom, $auto = FALSE)
+	function video($nom, $img ='', $auto = FALSE)
 	{
-		$retour = '<video controls width="600" poster="'.img_url($nom.'.jpg').'" preload="metadata" ';
+		$retour = '<video controls poster="'.img_url($img).'" preload="metadata" ';
 		if($auto==TRUE){
 			$retour = $retour.'autoplay';
 		}

@@ -21,19 +21,14 @@
 						<li><a href="<?= site_url('galerie'); ?>">galerie<br> <span class="important">(Vesion Beta)</span></a></li>
 					</ul>
 				</li>
-				<li><a href="#">Vocaloid</a>
+				<li><a href="#">anime</a>
 					<ul>
-						<!--<li><a href="<?= site_url(); ?>">Hatsune Miku</a></li>
-						<li><a href="<?= site_url(); ?>">Kagamine Rin/Len</a></li>
-						<li><a href="<?= site_url(); ?>">Megurine Luka</a></li>
-						<li><a href="<?= site_url(); ?>">Megpoid Gumi</a></li>
-						<li><a href="<?= site_url(); ?>">Kaito</a></li>-->
-						<li><a href="<?= site_url('Vocaloid/alys'); ?>">Alys</a></li>
+						<li><a href="<?= site_url('anime/to_aru_kagaku_no_railgun'); ?>">Alys</a></li>
 					</ul>
 				</li>
-				<li><a href="#">UTAU</a>
+				<li><a href="#">manga</a>
 					<ul>
-						<li><a href="<?= site_url('UTAU/kasane'); ?>">Kasane Teto</a></li>
+						<li><a href="<?= site_url('manga/kasane'); ?>">Kasane Teto</a></li>
 						<!--<li><a href="<?= site_url(); ?>">Tsukiko Yami</a></li>
 						<li><a href="<?= site_url(); ?>">Sukone Tei</a></li>
 						<li><a href="<?= site_url(); ?>">Namine Ritsu</a></li>

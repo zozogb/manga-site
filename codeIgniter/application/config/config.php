@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 /*
 |--------------------------------------------------------------------------
-| Base Site URL
+| Base site URL
 |--------------------------------------------------------------------------
 |
 | URL to your CodeIgniter root. Typically this will be your base URL,
@@ -436,7 +436,7 @@ $config['global_xss_filtering'] = TRUE;
 
 /*
 |--------------------------------------------------------------------------
-| Cross Site Request Forgery
+| Cross site Request Forgery
 |--------------------------------------------------------------------------
 | Enables a CSRF cookie token to be set. When set to TRUE, token will be
 | checked on a submitted form. If you are accepting user data, it is strongly
